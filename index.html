@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="./img/logo.png" />
+  <title>Work Planning </title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Work Planning </h1>
+
+    <div id="task-form" class="card">
+      <h2>Add Task</h2>
+      <input type="text" id="task-title" placeholder="Task Title">
+      <textarea id="task-description" placeholder="Task Description"></textarea>
+      <div class="date-input">
+        <label for="task-start-date">Start Date:</label>
+        <input type="date" id="task-start-date">
+      </div>
+      <div class="date-input">
+        <label for="task-end-date">End Date:</label>
+        <input type="date" id="task-end-date">
+      </div>
+      <button class="btn-primary" onclick="addTask()">Add</button>
+    </div>
+
+    <div id="task-list" class="card">
+      <h2>Task List</h2>
+      <ul id="tasks"></ul>
+    </div>
+
+    <div class="reload-button">
+      <button class="btn-secondary" onclick="reloadPage()">Reload</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
